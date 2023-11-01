@@ -2,15 +2,31 @@
 title: "Aleya Khalifa"
 author: "Aleya Khalifa"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+html_document:
   toc: true
   toc_float: true
   theme: cerulean
 ---
 
-# An introduction to Aleya
+# Nice to meet you
+
+I am a PhD Candidate at Columbia University in the Epidemiology Department. My research focuses on improving HIV prevention programs and research methodologies for migrant and other mobile populations. I have about a decade of global health experience, mostly in sub-Saharan Africa.
 
 # Resume
 
+
 # Helpful links
+
+Here are some other ways to learn about me or reach out:
+
+* [My CPRC Profile](https://cprc.columbia.edu/directory/aleya-khalifa)
+
+* [My GitHub Account](https://github.com/aleyakhalifa)
+
+* [Find me on LinkedIn](https://www.linkedin.com/in/aleya-khalifa-0b959b69/)
+
+* [Email me!](mailto:ak4598@cumc.columbia.edu)
+
+
 
