@@ -7,13 +7,64 @@ html_document:
   toc_float: true
 ---
 
-## Nice to meet you
+# Nice to meet you
 
 I am a PhD Candidate at Columbia University in the Epidemiology Department. My research focuses on improving HIV prevention programs and research methodologies for migrant and other mobile populations. I have about a decade of global health experience, mostly in sub-Saharan Africa.
 
-## Resume
+# Resume
+
+Here, you will find my academic and professional experience.
+
+## Education
+
+#### PhD Candidate / Columbia University Mailman School of Public Health
+_Expected graduation: May 2025, Major: Epidemiology_
+
+#### Master of Public Health / Tulane School of Public Health & Tropical Medicine
+_May 2014, Major: Epidemiology_
+
+#### Bachelor of Science in Public Health / Tulane University
+_May 2013, Major: Public Health; Minor: Spanish, Cum Laude_
+
+## Selected scientific publications
+
+[Khalifa A, Ssekubugu R, Lessler J, Wawer M, Santelli JS, Hoffman S, et al. _Implications of rapid population growth on survey design and HIV estimates in the Rakai Community Cohort Study (RCCS), Uganda._ BMJ Open. 2023.](https://pubmed.ncbi.nlm.nih.gov/37495389/)
+
+[Khalifa A, Findley S, Gummerson E, Mantell JE, Hakim AJ, Philip NM, Ginindza C, Hassani AS, Hong SY, Jalloh MF, Kirungi WL, Maile L, Mgomella GS, Miller LA, Minchella P, Mutenda N, Njau P, Schwitters A, Ward J, Low A. _Associations between mobility, food insecurity and transactional sex among women in cohabitating partnerships: an analysis from six African countries 2016-2017._ JAIDS. 2022.](https://pubmed.ncbi.nlm.nih.gov/35389376/)
+
+[Khalifa A, Stover J, Mahy M, Idele P, Porth T, Lwamba C. _Demographic change and HIV epidemic projections to 2050 for adolescents and young people aged 15-24._ Global Health Action. 2019.](https://pubmed.ncbi.nlm.nih.gov/31510887/)
+
+
+## Experience
+
+#### Ruth L. Kirschstein Individual Predoctoral Fellowship (F31), NIH 
+
+Predoctoral fellow / September 2023 – August 2025
+
+#### Global HIV Implementation Science Research Training Program, ICAP 
+
+Predoctoral fellow / September 2020 – August 2023
+
+#### United Nations Children’s Fund (UNICEF), New York NY
+
+Statistics Officer / July 2018 – July 2020
+
+Consultant, HIV Data & Analytics / September 2017 – July 2018
+
+#### Centers for Disease Control and Prevention (CDC), Atlanta GA
+
+Global Health Fellow (HIV Surveillance) / September 2016 – August 2017
+
+#### Centers for Disease Control and Prevention (CDC), Tanzania
+
+Global Health Fellow (HIV Surveillance and Strategic Information) / August 2014 – August 2016
+
+#### Tulane University, New Orleans LA
+
+Research Assistant / September 2013 – May 2014
 
 
 
+# I made this fun dashboard - check it out
 
 [Dashboard](dashboard.html)
