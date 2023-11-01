@@ -1,7 +1,6 @@
 ---
 title: "Aleya Khalifa"
-author: "Aleya Khalifa"
-date: "`r Sys.Date()`"
+
 output: 
 html_document:
   toc: true
