@@ -1,2 +1,2 @@
 # aleyakhalifa.github.io
-repo for website
+This is a repo to document my website and dashboard creation.
