@@ -1,9 +1,53 @@
 ---
 title: "Dashboard"
-author: "Aleya Khalifa"
-date: "`r Sys.Date()`"
 output: 
-  html_document
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 Welcome to my dashboard!
+
+```{r setup, include=FALSE}
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+data("rest_inspec")
+rest_inspec <- rest_inspec %>%
+  filter(grade == "A" | grade == "B" | grade == "C") %>%
+  sample_n(10000)
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### New York restaurant inspection scores over time, averaged by borough (line plot)
+
+```{r}
+rest_inspec %>% 
+  mutate(month = format(inspection_date, "%Y-%m")) %>%
+  select(month, boro, score) %>% 
+  group_by(month, boro) %>%
+  summarize(average = mean(score)) %>%
+  ungroup() %>%
+  plot_ly(x = ~month, y = ~average, color = ~boro,  type = 'scatter', mode = 'lines+markers', colors = "viridis") %>%
+  layout(xaxis = list(title = "Month"),
+         yaxis = list (title = "Mean inspection score"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Distribution of inspection scores by borough (boxplot)
+
+```{r}
+
+```
+
+### Proportion of restaurants with grades A, B, and C, by borough (stacked bar chart up to 100%)
+
+```{r}
+
+```
