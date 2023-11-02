@@ -6,7 +6,7 @@ output:
     vertical_layout: fill
 ---
 
-Welcome to my dashboard!
+These plots show the performance of restaurants in terms of inspection scores and grades, by borough. Hover over each plot to get more information.
 
 ```{r setup, include=FALSE}
 library(p8105.datasets)
@@ -23,7 +23,7 @@ rest_inspec <- rest_inspec %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### New York restaurant inspection scores over time, averaged by borough (line plot)
+### Average New York restaurant inspection scores over time, by borough
 
 ```{r}
 rest_inspec %>% 
@@ -40,14 +40,33 @@ rest_inspec %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Distribution of inspection scores by borough (boxplot)
+### Distribution of inspection scores, by borough
 
 ```{r}
-
+rest_inspec %>%
+  plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")%>%
+  layout(xaxis = list(title = "Borough"),
+         yaxis = list (title = "Restaurant inspection scores"))
 ```
 
-### Proportion of restaurants with grades A, B, and C, by borough (stacked bar chart up to 100%)
+### Proportion of restaurants with grades A, B, and C, by borough
 
 ```{r}
+colors <- c('#CC1480', '#FF9673', '#E1C8B4')
 
+stacked <- rest_inspec %>%
+  group_by(boro) %>%
+  count(grade) %>% 
+  mutate(freq = n / sum(n) * 100) %>%
+  select(-n) %>%
+  pivot_wider(names_from = grade,
+              values_from = freq)
+
+stacked %>%
+  plot_ly(x = ~boro, y = ~C, name = 'Grade C', type = "bar", marker = list(color = '#CC1480')) %>%
+  add_trace(y=~B, name = 'Grade B', marker = list(color = '#FF9673')) %>%   
+  add_trace(y=~A, name = 'Grade A', marker = list(color = '#E1C8B4')) %>% 
+  layout(barmode = 'stack',
+         xaxis = list(title = "Borough"),
+         yaxis = list (title = "Proportion of restaurants"))
 ```
