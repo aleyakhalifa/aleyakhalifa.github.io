@@ -60,6 +60,7 @@ rest_inspec %>%
   select(-n) %>%
   pivot_wider(names_from = grade,
               values_from = freq) %>%
+  filter(boro != "Missing") %>%
   plot_ly(x = ~boro, y = ~C, name = 'Grade C', type = "bar", 
           marker = list(color = '#CC1480')) %>%
   add_trace(y=~B, name = 'Grade B', marker = list(color = '#FF9673')) %>%   
